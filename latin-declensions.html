@@ -205,6 +205,14 @@
       .neuter {
         color: var(--color-neuter);
       }
+
+      .previous {
+        background-color: cyan
+      }
+
+      .current {
+        background-color: yellow
+      }
     </style>
   </head>
 
@@ -214,6 +222,11 @@
         <h1>Latin Declensions</h1>
         <h2>bencrowder.net • Last modified 11 February 2023</h2>
       </header>
+
+      <div class="controls">
+        <label for="numberInput">Enter a chapter number:</label>
+        <input type="number" id="chapterNumberInput" value="1" min="1" max = "35">
+      </div>
 
       <section class="wrapper">
         <div class="wrapper__left">
@@ -239,13 +252,18 @@
                 <tbody>
                   <tr>
                     <th class="header">Nom</th>
-                    <td>aqu<span class="ending feminine">a</span></td>
-                    <td>aqu<span class="ending feminine">ae</span></td>
+                    <td><span class="entry chapter1">aqu<span class="ending feminine chapter1">a</span></span></span></td>
+                    <td><span class="entry chapter1">aqu<span class="ending feminine chapter1">ae</span></span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Acc</th>
+                    <td><span class="entry chapter3">aqu<span class="ending feminine chapter3">am</span></td>
+                    <td>aqu<span class="ending feminine">ās</span></td>
                   </tr>
                   <tr>
                     <th class="header">Gen</th>
-                    <td>aqu<span class="ending feminine">ae</span></td>
-                    <td>aqu<span class="ending feminine">ārum</span></td>
+                    <td><span class="entry chapter2">aqu<span class="ending feminine chapter2">ae</span></td>
+                    <td><span class="entry chapter2">aqu<span class="ending feminine chapter2">ārum</span></span></td>
                   </tr>
                   <tr>
                     <th class="header">Dat</th>
@@ -253,14 +271,446 @@
                     <td>aqu<span class="ending feminine">īs</span></td>
                   </tr>
                   <tr>
+                    <th class="header">Abl</th>
+                    <td><span class="entry chapter1">aqu<span class="ending feminine chapter1">ā</span></span></td>
+                    <td>aqu<span class="ending feminine">īs</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article>
+            <h3>2nd Declension</h3>
+
+            <div class="tables">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="2" class="example-words">
+                      servus, -ī, <span class="smcp">m</span>.
+                      <span class="example-word">slave</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="header">Nom</th>
+                    <td>serv<span class="ending masculine chapter1">us</span></td>
+                    <td>serv<span class="ending masculine chapter1">ī</span></td>
+                  </tr>
+                  <tr>
                     <th class="header">Acc</th>
-                    <td>aqu<span class="ending feminine">am</span></td>
-                    <td>aqu<span class="ending feminine">ās</span></td>
+                    <td>serv<span class="ending masculine chapter3">um</span></td>
+                    <td>serv<span class="ending masculine">ōs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Gen</th>
+                    <td>serv<span class="ending masculine chapter2">ī</span></td>
+                    <td>serv<span class="ending masculine chapter2">ōrum</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Dat</th>
+                    <td>serv<span class="ending masculine">ō</span></td>
+                    <td>serv<span class="ending masculine">īs</span></td>
                   </tr>
                   <tr>
                     <th class="header">Abl</th>
-                    <td>aqu<span class="ending feminine">ā</span></td>
-                    <td>aqu<span class="ending feminine">īs</span></td>
+                    <td>serv<span class="ending masculine">ō</span></td>
+                    <td>serv<span class="ending masculine">īs</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="headerless">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="example-words">
+                      dōnum, -ī, <span class="smcp">n</span>.
+                      <span class="example-word">gift</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>dōn<span class="ending neuter chapter1">um</span></td>
+                    <td>dōn<span class="ending neuter chapter1">a</span></td>
+                  </tr>
+                  <tr>
+                    <td>dōn<span class="ending neuter">um</span></td>
+                    <td>dōn<span class="ending neuter">a</span></td>
+                  </tr>
+                  <tr>
+                    <td>dōn<span class="ending neuter chapter2">ī</span></td>
+                    <td>dōn<span class="ending neuter chapter2">ōrum</span></td>
+                  </tr>
+                  <tr>
+                    <td>dōn<span class="ending neuter">ō</span></td>
+                    <td>dōn<span class="ending neuter">īs</span></td>
+                  </tr>
+                  <tr>
+                    <td>dōn<span class="ending neuter chapter1">ō</span></td>
+                    <td>dōn<span class="ending neuter">īs</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article>
+            <h3>3rd Declension</h3>
+
+            <div class="tables">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="2" class="example-words">
+                      rēx, rēgis, <span class="smcp">m</span>.
+                      <span class="example-word">king</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="header">Nom</th>
+                    <td>rēx</td>
+                    <td>rēg<span class="ending masculine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Gen</th>
+                    <td>rēg<span class="ending masculine">is</span></td>
+                    <td>rēg<span class="ending masculine">um</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Dat</th>
+                    <td>rēg<span class="ending masculine">ī</span></td>
+                    <td>rēg<span class="ending masculine">ibus</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Acc</th>
+                    <td>rēg<span class="ending masculine">em</span></td>
+                    <td>rēg<span class="ending masculine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Abl</th>
+                    <td>rēg<span class="ending masculine">e</span></td>
+                    <td>rēg<span class="ending masculine">ibus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="headerless">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="example-words">
+                      corpus, corporis, <span class="smcp">n</span>.
+                      <span class="example-word">body</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>corpus</td>
+                    <td>corpor<span class="ending neuter">a</span></td>
+                  </tr>
+                  <tr>
+                    <td>corpor<span class="ending neuter">is</span></td>
+                    <td>corpor<span class="ending neuter">um</span></td>
+                  </tr>
+                  <tr>
+                    <td>corpor<span class="ending neuter">ī</span></td>
+                    <td>corpor<span class="ending neuter">ibus</span></td>
+                  </tr>
+                  <tr>
+                    <td>corpus</td>
+                    <td>corpor<span class="ending neuter">a</span></td>
+                  </tr>
+                  <tr>
+                    <td>corpor<span class="ending neuter">e</span></td>
+                    <td>corpor<span class="ending neuter">ibus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+
+        <div class="wrapper__right">
+          <article>
+            <h3>3rd Declension i-stem</h3>
+
+            <div class="tables">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="2" class="example-words">
+                      cīvis, -is, <span class="smcp">m</span>.
+                      <span class="example-word">citizen</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="header">Nom</th>
+                    <td>cīv<span class="ending masculine">is</span></td>
+                    <td>cīv<span class="ending masculine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Gen</th>
+                    <td>cīv<span class="ending masculine">is</span></td>
+                    <td>cīv<span class="ending masculine">ium</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Dat</th>
+                    <td>cīv<span class="ending masculine">ī</span></td>
+                    <td>cīv<span class="ending masculine">ibus</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Acc</th>
+                    <td>cīv<span class="ending masculine">em</span></td>
+                    <td>cīv<span class="ending masculine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Abl</th>
+                    <td>cīv<span class="ending masculine">e</span></td>
+                    <td>cīv<span class="ending masculine">ibus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="headerless">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="example-words">
+                      mare, -is, <span class="smcp">n</span>.
+                      <span class="example-word">sea</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>mar<span class="ending neuter">e</span></td>
+                    <td>mar<span class="ending neuter">ia</span></td>
+                  </tr>
+                  <tr>
+                    <td>mar<span class="ending neuter">is</span></td>
+                    <td>mar<span class="ending neuter">ium</span></td>
+                  </tr>
+                  <tr>
+                    <td>mar<span class="ending neuter">ī</span></td>
+                    <td>mar<span class="ending neuter">ibus</span></td>
+                  </tr>
+                  <tr>
+                    <td>mar<span class="ending neuter">e</span></td>
+                    <td>mar<span class="ending neuter">ia</span></td>
+                  </tr>
+                  <tr>
+                    <td>mar<span class="ending neuter">ī</span></td>
+                    <td>mar<span class="ending neuter">ibus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article>
+            <h3>4th Declension</h3>
+
+            <div class="tables">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="2" class="example-words">
+                      frūctus, -ūs, <span class="smcp">m</span>.
+                      <span class="example-word">fruit</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="header">Nom</th>
+                    <td>frūct<span class="ending masculine">us</span></td>
+                    <td>frūct<span class="ending masculine">ūs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Gen</th>
+                    <td>frūct<span class="ending masculine">ūs</span></td>
+                    <td>frūct<span class="ending masculine">uum</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Dat</th>
+                    <td>frūct<span class="ending masculine">uī</span></td>
+                    <td>frūct<span class="ending masculine">ibus</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Acc</th>
+                    <td>frūct<span class="ending masculine">um</span></td>
+                    <td>frūct<span class="ending masculine">ūs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Abl</th>
+                    <td>frūct<span class="ending masculine">ū</span></td>
+                    <td>frūct<span class="ending masculine">ibus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="headerless">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="example-words">
+                      cornū, -ūs, <span class="smcp">n</span>.
+                      <span class="example-word">horn</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>corn<span class="ending neuter">ū</span></td>
+                    <td>corn<span class="ending neuter">ua</span></td>
+                  </tr>
+                  <tr>
+                    <td>corn<span class="ending neuter">ūs</span></td>
+                    <td>corn<span class="ending neuter">uum</span></td>
+                  </tr>
+                  <tr>
+                    <td>corn<span class="ending neuter">ū</span></td>
+                    <td>corn<span class="ending neuter">ibus</span></td>
+                  </tr>
+                  <tr>
+                    <td>corn<span class="ending neuter">ū</span></td>
+                    <td>corn<span class="ending neuter">ua</span></td>
+                  </tr>
+                  <tr>
+                    <td>corn<span class="ending neuter">ū</span></td>
+                    <td>corn<span class="ending neuter">ibus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article>
+            <h3>5th Declension</h3>
+
+            <div class="tables">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th colspan="2" class="example-words">
+                      rēs, reī, <span class="smcp">f</span>.
+                      <span class="example-word">thing</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="header">Nom</th>
+                    <td>r<span class="ending feminine">ēs</span></td>
+                    <td>r<span class="ending feminine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Gen</th>
+                    <td>r<span class="ending feminine">eī</span></td>
+                    <td>r<span class="ending feminine">ērum</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Dat</th>
+                    <td>r<span class="ending feminine">eī</span></td>
+                    <td>r<span class="ending feminine">ēbus</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Acc</th>
+                    <td>r<span class="ending feminine">em</span></td>
+                    <td>r<span class="ending feminine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <th class="header">Abl</th>
+                    <td>r<span class="ending feminine">ē</span></td>
+                    <td>r<span class="ending feminine">ēbus</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="headerless">
+                <thead>
+                  <tr>
+                    <th colspan="2" class="example-words">
+                      diēs, diēī, <span class="smcp">m</span>.
+                      <span class="example-word">day</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="header">Singular</th>
+                    <th class="header">Plural</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>di<span class="ending masculine">ēs</span></td>
+                    <td>di<span class="ending masculine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <td>di<span class="ending masculine">ēī</span></td>
+                    <td>di<span class="ending masculine">ērum</span></td>
+                  </tr>
+                  <tr>
+                    <td>di<span class="ending masculine">ēī</span></td>
+                    <td>di<span class="ending masculine">ēbus</span></td>
+                  </tr>
+                  <tr>
+                    <td>di<span class="ending masculine">em</span></td>
+                    <td>di<span class="ending masculine">ēs</span></td>
+                  </tr>
+                  <tr>
+                    <td>di<span class="ending masculine">ē</span></td>
+                    <td>di<span class="ending masculine">ēbus</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -269,5 +719,47 @@
         </div>
       </section>
     </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const chapterNumberInput = document.getElementById('chapterNumberInput');
+        const highlightTargets = document.querySelectorAll('.entry');
+        const regexExtractChapterNumber = /\bchapter(\d+)\b/
+
+        function updateHighlight() {
+          const chapterNumberInputInt = parseInt(chapterNumberInput.value, 10);
+
+          if (!isNaN(chapterNumberInputInt)) {
+            for (let highlightTarget of highlightTargets) {
+              const regexMatches = regexExtractChapterNumber.exec(highlightTarget.className);
+              if (regexMatches != null) {
+                highlightTargetChapterNumber = parseInt(regexMatches[1], 10);
+                switch (Math.sign(chapterNumberInputInt - highlightTargetChapterNumber)) {
+                  case 1:
+                    highlightTarget.classList.remove('current');
+                    highlightTarget.classList.add('previous');
+                    break;
+
+                  case 0:
+                    highlightTarget.classList.remove('previous');
+                    highlightTarget.classList.add('current');
+                    break;
+
+                  case -1:
+                    highlightTarget.classList.remove('previous');
+                    highlightTarget.classList.remove('current');
+                    break;
+                }
+              }
+            }
+          }
+        }
+
+        chapterNumberInput.addEventListener('input', updateHighlight);
+
+        // Run once on page load to set the initial state
+        updateHighlight();
+      });
+    </script>
   </body>
 </html>
