@@ -3,153 +3,19 @@
   <head>
     <meta charset="utf-8" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link -->
-    <!--   href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" -->
-    <!--   rel="stylesheet" -->
-    <!-- /> -->
-		<!-- <link rel="stylesheet" type="text/css" href="css/sheets-of-paper-a4.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style type="text/css">
-    <!--   :root { -->
-    <!--     --column-gap: 1rem; -->
-    <!--     --header-column-width: 2.75rem; /* width of nom/gen/etc. */ -->
-    <!--     --header-column-gap: 0.75rem; /* gap to right of nom/gen/etc. */ -->
-    <!--     --column-1-width: 5rem; -->
-    <!--     --column-2-width: 7rem; /* extra for space between the two tables */ -->
-    <!--     --column-3-width: 5rem; -->
-    <!--     --column-4-width: 7rem; -->
-    <!--   } -->
-
       * {
         font-family: Noto Serif;
         <!-- line-height: 1; -->
-      }
-    <!--     box-sizing: border-box; -->
-    <!--     -webkit-print-color-adjust: exact; -->
-    <!--     print-color-adjust: exact; -->
-
-    <!--   /* Header ----------------------------------------------- */ -->
-
-    <!--   header { -->
-    <!--     align-items: baseline; -->
-    <!--     display: flex; -->
-    <!--     justify-content: space-between; -->
-    <!--     margin-bottom: 1.2rem; -->
-    <!--   } -->
-
-    <!--   /* Latin Declensions */ -->
-    <!--   h1 { -->
-    <!--     font-size: 1.3rem; -->
-    <!--     font-weight: 500; -->
-    <!--     font-variant-caps: all-small-caps; -->
-    <!--     letter-spacing: 0.06rem; -->
-    <!--     margin: 0; -->
-    <!--   } -->
-
-    <!--   /* URL + last modified */ -->
-    <!--   h2 { -->
-    <!--     color: #888; -->
-    <!--     font-size: 0.8rem; -->
-    <!--     font-style: italic; -->
-    <!--     font-variant-numeric: oldstyle-nums; -->
-    <!--     font-weight: 400; -->
-    <!--     margin: 0; -->
-    <!--   } -->
-
-    <!--   /* Declension block ------------------------------------- */ -->
-
-    <!--   /* Declension block title */ -->
-    <!--   h3 { -->
-    <!--     font-size: 0.8rem; -->
-    <!--     font-weight: 500; -->
-    <!--     letter-spacing: 0.06rem; -->
-    <!--     margin: 0; -->
-    <!--     margin-bottom: 0.2rem; -->
-    <!--     text-transform: uppercase; -->
-    <!--   } -->
-
-    <!--   /* Declension tables ------------------------------------ */ -->
-
-      .tables {
-        display: flex;
       }
 
       th {
         text-align: left;
       }
-    <!--     line-height: 1.2rem; /* mostly for example words */ -->
-    <!--     font-style: italic; -->
-
-    <!--   /* Header class used for nom/gen/etc. and singular/plural */ -->
-    <!--   th.header { -->
-    <!--     color: #888; -->
-    <!--     font-size: 0.7rem; -->
-    <!--     font-weight: 500; -->
-    <!--     line-height: 1; -->
-    <!--     letter-spacing: 0.07rem; -->
-    <!--   } -->
-
-    <!--   /* Primarily the words themselves */ -->
-    <!--   td { -->
-    <!--     font-size: 1.2rem; -->
-    <!--     line-height: 1.35rem; -->
-    <!--   } -->
-
-    <!--   /* Nom/gen/etc. headers */ -->
-    <!--   table:not(.headerless) th:first-child, -->
-    <!--   table:not(.headerless) td:first-child { -->
-    <!--     line-height: 1.5; -->
-    <!--     padding-right: var(--header-column-gap, 0.7rem); -->
-    <!--     text-align: right; -->
-    <!--     vertical-align: bottom; -->
-    <!--     width: var(--header-column-width, 2rem); -->
-    <!--   } -->
-
-    <!--   /* First column */ -->
-    <!--   table:not(.headerless) th:nth-child(2), -->
-    <!--   table:not(.headerless) td:nth-child(2) { -->
-    <!--     width: var(--column-1-width, 3.5rem); -->
-    <!--   } -->
-
-    <!--   /* Second column */ -->
-    <!--   table:not(.headerless) th:nth-child(3), -->
-    <!--   table:not(.headerless) td:nth-child(3) { -->
-    <!--     width: var(--column-2-width, 3.5rem); -->
-    <!--   } -->
-
-    <!--   /* First column of second table */ -->
-    <!--   table.headerless th:first-child, -->
-    <!--   table.headerless td:first-child { -->
-    <!--     width: var(--column-3-width, 3.5rem); -->
-    <!--   } -->
-
-    <!--   /* Second column of second table */ -->
-    <!--   table.headerless th:nth-child(2), -->
-    <!--   table.headerless td:nth-child(2) { -->
-    <!--     width: var(--column-4-width, 3.5rem); -->
-    <!--   } -->
-
-    <!--   /* Example words ---------------------------------------- */ -->
-
-    <!--   .example-words { -->
-    <!--     color: #777; -->
-    <!--     font-weight: 400; -->
-    <!--     padding-bottom: 4pt; -->
-    <!--   } -->
-
-    <!--   .example-word { -->
-    <!--     font-style: italic; -->
-    <!--   } -->
-
-    <!--   .smcp { -->
-    <!--     font-variant-caps: all-small-caps; -->
-    <!--     letter-spacing: 0.03rem; -->
-    <!--   } -->
 
       .previous {
         background-color: cyan
@@ -186,97 +52,97 @@
           <tr>
             <th/>
             <th>&emsp;</th>
-            <th class="header">sing</th>
-            <th class="header">plūr</th>
+            <th>sing</th>
+            <th>plūr</th>
             <th>&emsp;</th>
-            <th class="header">sing</th>
-            <th class="header">plūr</th>
+            <th>sing</th>
+            <th>plūr</th>
             <th>&emsp;</th>
-            <th class="header">sing</th>
-            <th class="header">plūr</th>
+            <th>sing</th>
+            <th>plūr</th>
             <th>&emsp;</th>
-            <th class="header">sing</th>
-            <th class="header">plūr</th>
+            <th>sing</th>
+            <th>plūr</th>
           </tr>
 
           <tr>
-            <th class="header">nōm</th>
-            <th/>
+            <th>nōm</th>
+            <td/>
             <td><span class="entry chapter1" title="1.1 Roma in Italiā est.">hōr|a</span></td>
             <td><span class="entry chapter1" title="1.30 Sicilia et Sardinia nōn īnsulae parvae, sed īnsulae magnae sunt.">hōr|ae</span></span></td>
-            <th/>
+            <td/>
             <td><span class="entry chapter1" title="1.5 Aegyptus in Eurōpā nōn est.">serv|us</span></span></td>
             <td><span class="entry chapter1" title="1.19 Nīlus et Rhēnus fluviī sunt.">serv|ī</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">liber|</span></span></td>
-            <td><span class="entry chapter36">libr|ī</span></span></td>
-            <th/>
+            <td/>
+            <td><span class="entry chapter36" title="">liber|</span></span></td>
+            <td><span class="entry chapter36" title="">libr|ī</span></span></td>
+            <td/>
             <td><span class="entry chapter1" title="1.33 Brundisium oppidum est.">verb|um</span></span></td>
             <td><span class="entry chapter1" title="1.33 Brundisium et Tūsculum oppida sunt.">verb|a</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">acc</th>
-            <th/>
-            <td><span class="entry chapter36">hōr|am</span></td>
-            <td><span class="entry chapter36">hōr|ās</span></td>
-            <th/>
-            <td><span class="entry chapter36">serv|um</span></span></td>
-            <td><span class="entry chapter36">serv|ōs</span></td>
-            <th/>
-            <td><span class="entry chapter36">libr|um</span></td>
-            <td><span class="entry chapter36">libr|ōs</span></td>
-            <th/>
-            <td><span class="entry chapter36">verb|um</span></td>
-            <td><span class="entry chapter36">verb|a</span></td>
+            <th>acc</th>
+            <td/>
+            <td><span class="entry chapter36" title="">hōr|am</span></td>
+            <td><span class="entry chapter36" title="">hōr|ās</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">serv|um</span></span></td>
+            <td><span class="entry chapter36" title="">serv|ōs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">libr|um</span></td>
+            <td><span class="entry chapter36" title="">libr|ōs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">verb|um</span></td>
+            <td><span class="entry chapter36" title="">verb|a</span></td>
           </tr>
 
           <tr>
-            <th class="header">gen</th>
-            <th/>
-            <td><span class="entry chapter36">hōr|ae</span></span></td>
-            <td><span class="entry chapter36">hōr|ārum</span></span></span></td>
-            <th/>
-            <td><span class="entry chapter36">serv|ī</span></span></td>
-            <td><span class="entry chapter36">serv|ōrum</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">libr|ī</span></td>
-            <td><span class="entry chapter36">libr|ōrum</span></td>
-            <th/>
-            <td><span class="entry chapter36">verb|ī</span></span></td>
-            <td><span class="entry chapter36">verb|ōrum</span></span></td>
+            <th>gen</th>
+            <td/>
+            <td><span class="entry chapter36" title="">hōr|ae</span></span></td>
+            <td><span class="entry chapter36" title="">hōr|ārum</span></span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">serv|ī</span></span></td>
+            <td><span class="entry chapter36" title="">serv|ōrum</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">libr|ī</span></td>
+            <td><span class="entry chapter36" title="">libr|ōrum</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">verb|ī</span></span></td>
+            <td><span class="entry chapter36" title="">verb|ōrum</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">dat</th>
-            <th/>
-            <td><span class="entry chapter36">hōr|ae</span></td>
-            <td><span class="entry chapter36">hōr|īs</span></td>
-            <th/>
-            <td><span class="entry chapter36">serv|ō</span></td>
-            <td><span class="entry chapter36">serv|īs</span></td>
-            <th/>
-            <td><span class="entry chapter36">libr|ō</span></td>
-            <td><span class="entry chapter36">libr|īs</span></td>
-            <th/>
-            <td><span class="entry chapter36">verb|ō</span></td>
-            <td><span class="entry chapter36">verb|īs</span></td>
+            <th>dat</th>
+            <td/>
+            <td><span class="entry chapter36" title="">hōr|ae</span></td>
+            <td><span class="entry chapter36" title="">hōr|īs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">serv|ō</span></td>
+            <td><span class="entry chapter36" title="">serv|īs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">libr|ō</span></td>
+            <td><span class="entry chapter36" title="">libr|īs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">verb|ō</span></td>
+            <td><span class="entry chapter36" title="">verb|īs</span></td>
           </tr>
 
           <tr>
-            <th class="header">abl</th>
-            <th/>
+            <th>abl</th>
+            <td/>
               <td><span class="entry chapter1" title="1.1 Roma in Italiā est.">hōr|ā</span></span></span></td>
-            <td><span class="entry chapter36">hōr|īs</span></td>
-            <th/>
-            <td><span class="entry chapter36">serv|ō</span></span></td>
-            <td><span class="entry chapter36">serv|īs</span></td>
-            <th/>
-            <td><span class="entry chapter36">libr|ō</span></td>
-            <td><span class="entry chapter36">libr|īs</span></td>
-            <th/>
+            <td><span class="entry chapter36" title="">hōr|īs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">serv|ō</span></span></td>
+            <td><span class="entry chapter36" title="">serv|īs</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">libr|ō</span></td>
+            <td><span class="entry chapter36" title="">libr|īs</span></td>
+            <td/>
             <td><span class="entry chapter1" title="1.57 Germānia nōn est prōvincia Rōmāna: Germānia in imperiō Romānō nōn est.">verb|ō</span></span></td>
-            <td><span class="entry chapter36">verb|īs</span></td>
+            <td><span class="entry chapter36" title="">verb|īs</span></td>
           </tr>
 
           <tr>
@@ -288,83 +154,83 @@
           </tr>
 
           <tr>
-            <th class="header">nōm</th>
-            <th/>
+            <th>nōm</th>
+            <td/>
             <td><span class="entry chapter36" title="1.1 Roma in Italiā est.">sōl</span></td>
-            <td><span class="entry chapter36">sōl|ēs</span></span></td>
-            <th/>
+            <td><span class="entry chapter36" title="">sōl|ēs</span></span></td>
+            <td/>
             <td><span class="entry chapter36" title="Aegyptus in Eurōpā nōn est.">leō</span></span></td>
-            <td><span class="entry chapter36">leōn|es</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">vōx</span></span></td>
-            <td><span class="entry chapter36">vōc|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nōmen</span></span></td>
-            <td><span class="entry chapter36">nōmin|a</span></span></td>
+            <td><span class="entry chapter36" title="">leōn|es</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">vōx</span></span></td>
+            <td><span class="entry chapter36" title="">vōc|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nōmen</span></span></td>
+            <td><span class="entry chapter36" title="">nōmin|a</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">acc</th>
-            <th/>
+            <th>acc</th>
+            <td/>
             <td><span class="entry chapter36" title="">sōl|em</span></td>
-            <td><span class="entry chapter36">sōl|ēs</span></span></td>
-            <th/>
+            <td><span class="entry chapter36" title="">sōl|ēs</span></span></td>
+            <td/>
             <td><span class="entry chapter36" title="">leōn|em</span></span></td>
-            <td><span class="entry chapter36">leōn|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">vōc|em</span></span></td>
-            <td><span class="entry chapter36">vōc|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nōmen</span></span></td>
-            <td><span class="entry chapter36">nōmin|a</span></span></td>
+            <td><span class="entry chapter36" title="">leōn|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">vōc|em</span></span></td>
+            <td><span class="entry chapter36" title="">vōc|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nōmen</span></span></td>
+            <td><span class="entry chapter36" title="">nōmin|a</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">gen</th>
-            <th/>
+            <th>gen</th>
+            <td/>
             <td><span class="entry chapter36" title="">sōl|is</span></td>
-            <td><span class="entry chapter36">sōl|um</span></span></td>
-            <th/>
+            <td><span class="entry chapter36" title="">sōl|um</span></span></td>
+            <td/>
             <td><span class="entry chapter36" title="">leōn|is</span></span></td>
-            <td><span class="entry chapter36">leōn|um</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">vōc|is</span></span></td>
-            <td><span class="entry chapter36">vōc|um</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nōmin|is</span></span></td>
-            <td><span class="entry chapter36">nōmin|um</span></span></td>
+            <td><span class="entry chapter36" title="">leōn|um</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">vōc|is</span></span></td>
+            <td><span class="entry chapter36" title="">vōc|um</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nōmin|is</span></span></td>
+            <td><span class="entry chapter36" title="">nōmin|um</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">dat</th>
-            <th/>
+            <th>dat</th>
+            <td/>
             <td><span class="entry chapter36" title="">sōl|ī</span></td>
-            <td><span class="entry chapter36">sōl|ibus</span></span></td>
-            <th/>
+            <td><span class="entry chapter36" title="">sōl|ibus</span></span></td>
+            <td/>
             <td><span class="entry chapter36" title="">leōn|ī</span></span></td>
-            <td><span class="entry chapter36">leōn|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">vōc|ī</span></span></td>
-            <td><span class="entry chapter36">vōc|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nōmin|ī</span></span></td>
-            <td><span class="entry chapter36">nōmin|ibus</span></span></td>
+            <td><span class="entry chapter36" title="">leōn|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">vōc|ī</span></span></td>
+            <td><span class="entry chapter36" title="">vōc|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nōmin|ī</span></span></td>
+            <td><span class="entry chapter36" title="">nōmin|ibus</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">abl</th>
-            <th/>
+            <th>abl</th>
+            <td/>
             <td><span class="entry chapter36" title="">sōl|e</span></td>
-            <td><span class="entry chapter36">sōl|ibus</span></span></td>
-            <th/>
+            <td><span class="entry chapter36" title="">sōl|ibus</span></span></td>
+            <td/>
             <td><span class="entry chapter36" title="">leōn|e</span></span></td>
-            <td><span class="entry chapter36">leōn|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">vōc|e</span></span></td>
-            <td><span class="entry chapter36">vōc|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nōmin|e</span></span></td>
-            <td><span class="entry chapter36">nōmin|e</span></span></td>
+            <td><span class="entry chapter36" title="">leōn|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">vōc|e</span></span></td>
+            <td><span class="entry chapter36" title="">vōc|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nōmin|e</span></span></td>
+            <td><span class="entry chapter36" title="">nōmin|e</span></span></td>
           </tr>
 
           <tr>
@@ -372,83 +238,83 @@
           </tr>
 
           <tr>
-            <th class="header">nōm</th>
-            <th/>
-            <td><span class="entry chapter36">nāv|is</span></td>
-            <td><span class="entry chapter36">nāv|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">urb|s</span></span></td>
-            <td><span class="entry chapter36">urb|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mōns</span></span></td>
-            <td><span class="entry chapter36">mont|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mar|e</span></span></td>
-            <td><span class="entry chapter36">mar|ia</span></span></td>
+            <th>nōm</th>
+            <td/>
+            <td><span class="entry chapter36" title="">nāv|is</span></td>
+            <td><span class="entry chapter36" title="">nāv|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">urb|s</span></span></td>
+            <td><span class="entry chapter36" title="">urb|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mōns</span></span></td>
+            <td><span class="entry chapter36" title="">mont|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mar|e</span></span></td>
+            <td><span class="entry chapter36" title="">mar|ia</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">acc</th>
-            <th/>
-            <td><span class="entry chapter36">nāv|em</span></td>
-            <td><span class="entry chapter36">nāv|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">urb|em</span></span></td>
-            <td><span class="entry chapter36">urb|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mont|em</span></span></td>
-            <td><span class="entry chapter36">mont|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mar|e</span></span></td>
-            <td><span class="entry chapter36">mar|ia</span></span></td>
+            <th>acc</th>
+            <td/>
+            <td><span class="entry chapter36" title="">nāv|em</span></td>
+            <td><span class="entry chapter36" title="">nāv|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">urb|em</span></span></td>
+            <td><span class="entry chapter36" title="">urb|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mont|em</span></span></td>
+            <td><span class="entry chapter36" title="">mont|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mar|e</span></span></td>
+            <td><span class="entry chapter36" title="">mar|ia</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">gen</th>
-            <th/>
-            <td><span class="entry chapter36">nāv|is</span></td>
-            <td><span class="entry chapter36">nāv|ium</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">urb|is</span></span></td>
-            <td><span class="entry chapter36">urb|ium</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mont|is</span></span></td>
-            <td><span class="entry chapter36">mont|ium</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mar|is</span></span></td>
-            <td><span class="entry chapter36">mar|ium</span></span></td>
+            <th>gen</th>
+            <td/>
+            <td><span class="entry chapter36" title="">nāv|is</span></td>
+            <td><span class="entry chapter36" title="">nāv|ium</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">urb|is</span></span></td>
+            <td><span class="entry chapter36" title="">urb|ium</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mont|is</span></span></td>
+            <td><span class="entry chapter36" title="">mont|ium</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mar|is</span></span></td>
+            <td><span class="entry chapter36" title="">mar|ium</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">dat</th>
-            <th/>
-            <td><span class="entry chapter36">nāv|ī</span></td>
-            <td><span class="entry chapter36">nāv|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">urb|ī</span></span></td>
-            <td><span class="entry chapter36">urb|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mont|ī</span></span></td>
-            <td><span class="entry chapter36">mont|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mar|ī</span></span></td>
-            <td><span class="entry chapter36">mar|ibus</span></span></td>
+            <th>dat</th>
+            <td/>
+            <td><span class="entry chapter36" title="">nāv|ī</span></td>
+            <td><span class="entry chapter36" title="">nāv|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">urb|ī</span></span></td>
+            <td><span class="entry chapter36" title="">urb|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mont|ī</span></span></td>
+            <td><span class="entry chapter36" title="">mont|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mar|ī</span></span></td>
+            <td><span class="entry chapter36" title="">mar|ibus</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">abl</th>
-            <th/>
-            <td><span class="entry chapter36">nāv|e</span></td>
-            <td><span class="entry chapter36">nāv|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">urb|e</span></span></td>
-            <td><span class="entry chapter36">urb|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mont|e</span></span></td>
-            <td><span class="entry chapter36">mont|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">mar|ī</span></span></td>
-            <td><span class="entry chapter36">mar|ibus</span></span></td>
+            <th>abl</th>
+            <td/>
+            <td><span class="entry chapter36" title="">nāv|e</span></td>
+            <td><span class="entry chapter36" title="">nāv|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">urb|e</span></span></td>
+            <td><span class="entry chapter36" title="">urb|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mont|e</span></span></td>
+            <td><span class="entry chapter36" title="">mont|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">mar|ī</span></span></td>
+            <td><span class="entry chapter36" title="">mar|ibus</span></span></td>
           </tr>
 
           <tr>
@@ -461,83 +327,83 @@
           </tr>
 
           <tr>
-            <th class="header">nōm</th>
-            <th/>
-            <td><span class="entry chapter36">cās|us</span></td>
-            <td><span class="entry chapter36">cās|ūs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">corn|ū</span></span></td>
-            <td><span class="entry chapter36">corn|ua</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">di|ēs</span></span></td>
-            <td><span class="entry chapter36">di|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">r|ēs</span></span></td>
-            <td><span class="entry chapter36">r|ēs</span></span></td>
+            <th>nōm</th>
+            <td/>
+            <td><span class="entry chapter36" title="">cās|us</span></td>
+            <td><span class="entry chapter36" title="">cās|ūs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">corn|ū</span></span></td>
+            <td><span class="entry chapter36" title="">corn|ua</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">di|ēs</span></span></td>
+            <td><span class="entry chapter36" title="">di|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">r|ēs</span></span></td>
+            <td><span class="entry chapter36" title="">r|ēs</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">acc</th>
-            <th/>
-            <td><span class="entry chapter36">cās|um</span></td>
-            <td><span class="entry chapter36">cās|ūs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">corn|ū</span></span></td>
-            <td><span class="entry chapter36">corn|ua</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">di|em</span></span></td>
-            <td><span class="entry chapter36">di|ēs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">r|em</span></span></td>
-            <td><span class="entry chapter36">r|ēs</span></span></td>
+            <th>acc</th>
+            <td/>
+            <td><span class="entry chapter36" title="">cās|um</span></td>
+            <td><span class="entry chapter36" title="">cās|ūs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">corn|ū</span></span></td>
+            <td><span class="entry chapter36" title="">corn|ua</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">di|em</span></span></td>
+            <td><span class="entry chapter36" title="">di|ēs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">r|em</span></span></td>
+            <td><span class="entry chapter36" title="">r|ēs</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">gen</th>
-            <th/>
-            <td><span class="entry chapter36">cās|ūs</span></td>
-            <td><span class="entry chapter36">cās|uum</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">corn|ūs</span></span></td>
-            <td><span class="entry chapter36">corn|uum</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">di|ēī</span></span></td>
-            <td><span class="entry chapter36">di|ērum</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">r|eī</span></span></td>
-            <td><span class="entry chapter36">r|ērum</span></span></td>
+            <th>gen</th>
+            <td/>
+            <td><span class="entry chapter36" title="">cās|ūs</span></td>
+            <td><span class="entry chapter36" title="">cās|uum</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">corn|ūs</span></span></td>
+            <td><span class="entry chapter36" title="">corn|uum</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">di|ēī</span></span></td>
+            <td><span class="entry chapter36" title="">di|ērum</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">r|eī</span></span></td>
+            <td><span class="entry chapter36" title="">r|ērum</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">dat</th>
-            <th/>
-            <td><span class="entry chapter36">cās|uī</span></td>
-            <td><span class="entry chapter36">cās|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">corn|ū</span></span></td>
-            <td><span class="entry chapter36">corn|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">di|ēī</span></span></td>
-            <td><span class="entry chapter36">di|ēbus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">r|eī</span></span></td>
-            <td><span class="entry chapter36">r|ēbus</span></span></td>
+            <th>dat</th>
+            <td/>
+            <td><span class="entry chapter36" title="">cās|uī</span></td>
+            <td><span class="entry chapter36" title="">cās|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">corn|ū</span></span></td>
+            <td><span class="entry chapter36" title="">corn|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">di|ēī</span></span></td>
+            <td><span class="entry chapter36" title="">di|ēbus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">r|eī</span></span></td>
+            <td><span class="entry chapter36" title="">r|ēbus</span></span></td>
           </tr>
 
           <tr>
-            <th class="header">abl</th>
-            <th/>
-            <td><span class="entry chapter36">cās|ū</span></td>
-            <td><span class="entry chapter36">cās|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">corn|ū</span></span></td>
-            <td><span class="entry chapter36">corn|ibus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">di|ē</span></span></td>
-            <td><span class="entry chapter36">di|ēbus</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">r|ē</span></span></td>
-            <td><span class="entry chapter36">r|ēbus</span></span></td>
+            <th>abl</th>
+            <td/>
+            <td><span class="entry chapter36" title="">cās|ū</span></td>
+            <td><span class="entry chapter36" title="">cās|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">corn|ū</span></span></td>
+            <td><span class="entry chapter36" title="">corn|ibus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">di|ē</span></span></td>
+            <td><span class="entry chapter36" title="">di|ēbus</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">r|ē</span></span></td>
+            <td><span class="entry chapter36" title="">r|ēbus</span></span></td>
           </tr>
 
         </tbody>
@@ -557,158 +423,499 @@
             <th>&emsp;</th>
             <th/>
             <th>&emsp;</th>
-            <th class="header">m</th>
-            <th class="header">f</th>
-            <th class="header">n</th>
+            <th>m</th>
+            <th>f</th>
+            <th>n</th>
             <th>&emsp;</th>
-            <th class="header">m</th>
-            <th class="header">f</th>
-            <th class="header">n</th>
+            <th>m</th>
+            <th>f</th>
+            <th>n</th>
           </tr>
 
           <tr>
-            <th class="header">sing</th>
+            <th>sing</th>
             <th/>
-            <th class="header">nōm</th>
-            <th/>
-            <td><span class="entry chapter36">magn|us</span></td>
-            <td><span class="entry chapter36">magn|a</span></td>
-            <td><span class="entry chapter36">magn|um</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|us</span></span></td>
-            <td><span class="entry chapter36">nūll|a</span></td>
-            <td><span class="entry chapter36">nūll|um</span></span></td>
-          </tr>
-
-          <tr>
-            <th/>
-            <th/>
-            <th class="header">acc</th>
-            <th/>
-            <td><span class="entry chapter36">magn|um</span></td>
-            <td><span class="entry chapter36">magn|am</span></td>
-            <td><span class="entry chapter36">magn|um</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|um</span></span></td>
-            <td><span class="entry chapter36">nūll|am</span></td>
-            <td><span class="entry chapter36">nūll|um</span></span></td>
+            <th>nōm</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|us</span></td>
+            <td><span class="entry chapter36" title="">magn|a</span></td>
+            <td><span class="entry chapter36" title="">magn|um</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|us</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|a</span></td>
+            <td><span class="entry chapter36" title="">nūll|um</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">gen</th>
-            <th/>
-            <td><span class="entry chapter36">magn|ī</span></td>
-            <td><span class="entry chapter36">magn|ae</span></td>
-            <td><span class="entry chapter36">magn|ī</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|īus</span></span></td>
-            <td><span class="entry chapter36">nūll|īus</span></td>
-            <td><span class="entry chapter36">nūll|īus</span></span></td>
+            <th>acc</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|um</span></td>
+            <td><span class="entry chapter36" title="">magn|am</span></td>
+            <td><span class="entry chapter36" title="">magn|um</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|um</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|am</span></td>
+            <td><span class="entry chapter36" title="">nūll|um</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">dat</th>
-            <th/>
-            <td><span class="entry chapter36">magn|ō</span></td>
-            <td><span class="entry chapter36">magn|ae</span></td>
-            <td><span class="entry chapter36">magn|ō</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|ī</span></span></td>
-            <td><span class="entry chapter36">nūll|ī</span></td>
-            <td><span class="entry chapter36">nūll|ī</span></span></td>
+            <th>gen</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|ī</span></td>
+            <td><span class="entry chapter36" title="">magn|ae</span></td>
+            <td><span class="entry chapter36" title="">magn|ī</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|īus</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|īus</span></td>
+            <td><span class="entry chapter36" title="">nūll|īus</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">abl</th>
-            <th/>
-            <td><span class="entry chapter36">magn|ō</span></td>
-            <td><span class="entry chapter36">magn|ā</span></td>
-            <td><span class="entry chapter36">magn|ō</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|ō</span></span></td>
-            <td><span class="entry chapter36">nūll|ā</span></td>
-            <td><span class="entry chapter36">nūll|ō</span></span></td>
-          </tr>
-
-          <tr>
-            <th class="header">plūr</th>
-            <th/>
-            <th class="header">nōm</th>
-            <th/>
-            <td><span class="entry chapter36">magn|ī</span></td>
-            <td><span class="entry chapter36">magn|ae</span></td>
-            <td><span class="entry chapter36">magn|a</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|ī</span></span></td>
-            <td><span class="entry chapter36">nūll|ae</span></td>
-            <td><span class="entry chapter36">nūll|a</span></span></td>
+            <th>dat</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|ō</span></td>
+            <td><span class="entry chapter36" title="">magn|ae</span></td>
+            <td><span class="entry chapter36" title="">magn|ō</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|ī</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|ī</span></td>
+            <td><span class="entry chapter36" title="">nūll|ī</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">acc</th>
+            <th>abl</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|ō</span></td>
+            <td><span class="entry chapter36" title="">magn|ā</span></td>
+            <td><span class="entry chapter36" title="">magn|ō</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|ō</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|ā</span></td>
+            <td><span class="entry chapter36" title="">nūll|ō</span></span></td>
+          </tr>
+
+          <tr>
+            <th>plūr</th>
             <th/>
-            <td><span class="entry chapter36">magn|ōs</span></td>
-            <td><span class="entry chapter36">magn|ās</span></td>
-            <td><span class="entry chapter36">magn|a</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|ōs</span></span></td>
-            <td><span class="entry chapter36">nūll|ās</span></td>
-            <td><span class="entry chapter36">nūll|a</span></span></td>
+            <th>nōm</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|ī</span></td>
+            <td><span class="entry chapter36" title="">magn|ae</span></td>
+            <td><span class="entry chapter36" title="">magn|a</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|ī</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|ae</span></td>
+            <td><span class="entry chapter36" title="">nūll|a</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">gen</th>
-            <th/>
-            <td><span class="entry chapter36">magn|ōrum</span></td>
-            <td><span class="entry chapter36">magn|ārum</span></td>
-            <td><span class="entry chapter36">magn|ōrum</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|ōrum</span></span></td>
-            <td><span class="entry chapter36">nūll|ārum</span></td>
-            <td><span class="entry chapter36">nūll|ōrum</span></span></td>
+            <th>acc</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|ōs</span></td>
+            <td><span class="entry chapter36" title="">magn|ās</span></td>
+            <td><span class="entry chapter36" title="">magn|a</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|ōs</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|ās</span></td>
+            <td><span class="entry chapter36" title="">nūll|a</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">dat</th>
-            <th/>
-            <td><span class="entry chapter36">magn|īs</span></td>
-            <td><span class="entry chapter36">magn|īs</span></td>
-            <td><span class="entry chapter36">magn|īs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|īs</span></span></td>
-            <td><span class="entry chapter36">nūll|īs</span></td>
-            <td><span class="entry chapter36">nūll|īs</span></span></td>
+            <th>gen</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|ōrum</span></td>
+            <td><span class="entry chapter36" title="">magn|ārum</span></td>
+            <td><span class="entry chapter36" title="">magn|ōrum</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|ōrum</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|ārum</span></td>
+            <td><span class="entry chapter36" title="">nūll|ōrum</span></span></td>
           </tr>
 
           <tr>
             <th/>
             <th/>
-            <th class="header">abl</th>
-            <th/>
-            <td><span class="entry chapter36">magn|īs</span></td>
-            <td><span class="entry chapter36">magn|īs</span></td>
-            <td><span class="entry chapter36">magn|īs</span></span></td>
-            <th/>
-            <td><span class="entry chapter36">nūll|īs</span></span></td>
-            <td><span class="entry chapter36">nūll|īs</span></td>
-            <td><span class="entry chapter36">nūll|īs</span></span></td>
+            <th>dat</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|īs</span></td>
+            <td><span class="entry chapter36" title="">magn|īs</span></td>
+            <td><span class="entry chapter36" title="">magn|īs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|īs</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|īs</span></td>
+            <td><span class="entry chapter36" title="">nūll|īs</span></span></td>
           </tr>
 
+          <tr>
+            <th/>
+            <th/>
+            <th>abl</th>
+            <td/>
+            <td><span class="entry chapter36" title="">magn|īs</span></td>
+            <td><span class="entry chapter36" title="">magn|īs</span></td>
+            <td><span class="entry chapter36" title="">magn|īs</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">nūll|īs</span></span></td>
+            <td><span class="entry chapter36" title="">nūll|īs</span></td>
+            <td><span class="entry chapter36" title="">nūll|īs</span></span></td>
+          </tr>
 
         </tbody>
       </table>
+
+      <table>
+        <tbody>
+
+          <tr>
+              <th colspan="9">Comparātiō</th>
+          </tr>
+
+          <tr>
+            <th>positīvus</th>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">long|us</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">brev|is</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">audāx -āc|is</span></span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">aeger -gr|a -gr|um</span></span></td>
+          </tr>
+
+          <tr>
+            <th>comparātīvus</th>
+            <td/>
+            <td><span class="entry chapter36" title="">long|ior -ius</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">brev|ior -ius</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">audāc|ior -ius</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">aegr|ior -ius</span></span></td>
+          </tr>
+
+          <tr>
+            <th>positīvus</th>
+            <td/>
+            <td><span class="entry chapter36" title="">long|issim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">brev|issim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">audāc|issim|us</span></span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">aeger|rim|us</span></span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <h3>NVMERI</h3>
+
+      <table>
+        <tbody>
+
+          <tr>
+            <td><span class="entry chapter36" title="">1</span></td>
+            <td><span class="entry chapter36" title="">ūn|us</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">10</span></td>
+            <td><span class="entry chapter36" title="">decem</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">100</span></td>
+            <td><span class="entry chapter36" title="">centum</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">1000</span></td>
+            <td><span class="entry chapter36" title="">mīlle</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">11</span></td>
+            <td><span class="entry chapter36" title="">ūndecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">2</span></td>
+            <td><span class="entry chapter36" title="">du|o -ae -a</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">20</span></td>
+            <td><span class="entry chapter36" title="">vīgintī</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">200</span></td>
+            <td><span class="entry chapter36" title="">ducent|ī</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">2000</span></td>
+            <td><span class="entry chapter36" title="">du|o mīl|ia</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">12</span></td>
+            <td><span class="entry chapter36" title="">duodecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">3</span></td>
+            <td><span class="entry chapter36" title="">tr|ēs -ia</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">30</span></td>
+            <td><span class="entry chapter36" title="">trīgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">300</span></td>
+            <td><span class="entry chapter36" title="">trecent|ī</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">3000</span></td>
+            <td><span class="entry chapter36" title="">tr|ia mīl|ia</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">13</span></td>
+            <td><span class="entry chapter36" title="">trēdecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">4</span></td>
+            <td><span class="entry chapter36" title="">quattuor</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">40</span></td>
+            <td><span class="entry chapter36" title="">quadrāgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">400</span></td>
+            <td><span class="entry chapter36" title="">quadringent|ī</span></td>
+            <td/>
+            <td/>
+            <td style="text-align: center"><span class="entry chapter36" title="">cēt.</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">14</span></td>
+            <td><span class="entry chapter36" title="">quattuordecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">5</span></td>
+            <td><span class="entry chapter36" title="">quīnque</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">50</span></td>
+            <td><span class="entry chapter36" title="">quīnquāgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">500</span></td>
+            <td><span class="entry chapter36" title="">quīngent|ī</span></td>
+            <td/>
+            <td/>
+            <td/>
+            <td/>
+            <td><span class="entry chapter36" title="">15</span></td>
+            <td><span class="entry chapter36" title="">quīndecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">6</span></td>
+            <td><span class="entry chapter36" title="">sex</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">60</span></td>
+            <td><span class="entry chapter36" title="">sexāgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">600</span></td>
+            <td><span class="entry chapter36" title="">sescent|ī</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">9745</span></td>
+            <td><span class="entry chapter36" title="">novem mīlia</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">16</span></td>
+            <td><span class="entry chapter36" title="">sēdecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">7</span></td>
+            <td><span class="entry chapter36" title="">septem</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">70</span></td>
+            <td><span class="entry chapter36" title="">septuāgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">700</span></td>
+            <td><span class="entry chapter36" title="">septingent|ī</span></td>
+            <td/>
+            <td/>
+            <td><span class="entry chapter36" title="">septingentī</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">17</span></td>
+            <td><span class="entry chapter36" title="">septendecim</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">8</span></td>
+            <td><span class="entry chapter36" title="">octō</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">80</span></td>
+            <td><span class="entry chapter36" title="">octōgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">800</span></td>
+            <td><span class="entry chapter36" title="">octingent|ī</span></td>
+            <td/>
+            <td/>
+            <td><span class="entry chapter36" title="">quadrāgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">18</span></td>
+            <td><span class="entry chapter36" title="">duodēvīgintī</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">9</span></td>
+            <td><span class="entry chapter36" title="">novem</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">90</span></td>
+            <td><span class="entry chapter36" title="">nonāgintā</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">900</span></td>
+            <td><span class="entry chapter36" title="">nōngent|ī</span></td>
+            <td/>
+            <td/>
+            <td><span class="entry chapter36" title="">quīnque</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">19</span></td>
+            <td><span class="entry chapter36" title="">ūndēvīgintī</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p/>
+
+      <table>
+        <tbody>
+
+          <tr>
+            <td><span class="entry chapter36" title="">1</span></td>
+            <td><span class="entry chapter36" title="">prīm|us</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">10</span></td>
+            <td><span class="entry chapter36" title="">decim|us</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">100</span></td>
+            <td><span class="entry chapter36" title="">centēsim|us</span></td>
+            <td>&emsp;</td>
+            <td><span class="entry chapter36" title="">1000</span></td>
+            <td><span class="entry chapter36" title="">mīllēsim|us</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">2</span></td>
+            <td><span class="entry chapter36" title="">secund|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">20</span></td>
+            <td><span class="entry chapter36" title="">vīcēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">200</span></td>
+            <td><span class="entry chapter36" title="">ducentēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">2000</span></td>
+            <td><span class="entry chapter36" title="">bis mīllēsim|us</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">3</span></td>
+            <td><span class="entry chapter36" title="">terti|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">30</span></td>
+            <td><span class="entry chapter36" title="">trīcēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">300</span></td>
+            <td><span class="entry chapter36" title="">trecentēsim|us</span></td>
+            <td/>
+            <td/>
+            <td style="text-align: center"><span class="entry chapter36" title="">cet.</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">4</span></td>
+            <td><span class="entry chapter36" title="">quārt|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">40</span></td>
+            <td><span class="entry chapter36" title="">quadrāgēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">400</span></td>
+            <td><span class="entry chapter36" title="">quadringentēsim|us</span></td>
+            <td/>
+            <td style="text-align: right"><span class="entry chapter36" title="">11</span></td>
+            <td><span class="entry chapter36" title="">ūndecim|us</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">5</span></td>
+            <td><span class="entry chapter36" title="">quīnt|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">50</span></td>
+            <td><span class="entry chapter36" title="">quīnquāgēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">500</span></td>
+            <td><span class="entry chapter36" title="">quīngentēsim|us</span></td>
+            <td/>
+            <td style="text-align: right"><span class="entry chapter36" title="">12</span></td>
+            <td><span class="entry chapter36" title="">duodecim|us</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">6</span></td>
+            <td><span class="entry chapter36" title="">sext|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">60</span></td>
+            <td><span class="entry chapter36" title="">sexāgēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">600</span></td>
+            <td><span class="entry chapter36" title="">sescentēsim|us</span></td>
+            <td/>
+            <td style="text-align: right"><span class="entry chapter36" title="">13</span></td>
+            <td><span class="entry chapter36" title="">tert|us decim|us</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">7</span></td>
+            <td><span class="entry chapter36" title="">septim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">70</span></td>
+            <td><span class="entry chapter36" title="">septuāgēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">700</span></td>
+            <td><span class="entry chapter36" title="">septingentēsim|us</span></td>
+            <td/>
+            <td/>
+            <td style="text-align: center"><span class="entry chapter36" title="">cet.</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">8</span></td>
+            <td><span class="entry chapter36" title="">octāv|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">80</span></td>
+            <td><span class="entry chapter36" title="">octōgēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">800</span></td>
+            <td><span class="entry chapter36" title="">octingentēsim|us</span></td>
+            <td/>
+            <td style="text-align: right"><span class="entry chapter36" title="">18</span></td>
+            <td><span class="entry chapter36" title="">duodēvīcēsim|us</span></td>
+          </tr>
+
+          <tr>
+            <td><span class="entry chapter36" title="">9</span></td>
+            <td><span class="entry chapter36" title="">nōn|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">90</span></td>
+            <td><span class="entry chapter36" title="">nōnāgēsim|us</span></td>
+            <td/>
+            <td><span class="entry chapter36" title="">900</span></td>
+            <td><span class="entry chapter36" title="">nōngentēsim|us</span></td>
+            <td/>
+            <td style="text-align: right"><span class="entry chapter36" title="">19</span></td>
+            <td><span class="entry chapter36" title="">ūndēvīcēsim|us</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
 
     </main>
 
