@@ -17,8 +17,11 @@
         text-align: left;
       }
 
-      .previous {
-        background-color: cyan
+      .sticky {
+        position: sticky;
+        top: 0;
+        padding: 10px 16px;
+        background: white;
       }
 
       .current {
@@ -36,7 +39,7 @@
 
       <p>This is an HTML document of the <em>TABVLA DECLINATIONVM</em> in the Latin textbook <em>LINGVA LATINA</em>. Choose a chapter number to highlight in yellow the grammar that is introduced in that chapter. Blue highlights indicate grammar that is introduced in earlier chapters. Hover text gives the chapter number, verse number, and quotes the sentence in which the grammar is introduced.</p>
 
-      <div>
+      <div class="sticky">
         <label for="numberInput">Enter a chapter number:</label>
         <input type="number" id="chapterNumberInput" value="1" min="0" max = "35">
       </div>
