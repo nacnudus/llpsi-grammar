@@ -34,13 +34,11 @@
         white-space: nowrap;
       }
 
-      .sticky {
-        position: sticky;
-        top: 0;
-        padding: 1rem 1rem;
-        background: light-dark(white, black);
+      #chapterNumberInput {
+        height: 2rem; /* or a specific pixel value */
+        width: 3rem; /* or a specific pixel value */
+        font-size: 1rem;
       }
-
       .unseen {
         padding: 0.13em 0.2em;
         color: light-dark(black, white);
@@ -73,12 +71,12 @@
 
       <h2>https://github.com/nacnudus/llpsi-grammar</h2>
 
-      <p>This is an HTML document of the <em>TABVLA DECLINATIONVM</em> in the Latin textbook <em>LINGVA LATINA</em>. Choose a chapter number to highlight in yellow the grammar that is introduced in that chapter. Blue highlights indicate grammar that is introduced in earlier chapters. Hover text gives the chapter number, verse number, and quotes the sentence in which the grammar is introduced.</p>
+      <p>This is an HTML document of the <em>TABVLA DECLINATIONVM</em> in the Latin textbook <em>LINGVA LATINA</em>. Choose a chapter number to highlight the grammar that is introduced in that chapter. Dimmer highlights indicate grammar that is introduced in earlier chapters. Hover text gives the chapter number, verse number, and quotes the sentence in which the grammar is introduced.</p>
 
-      <div class="sticky">
+      <span class="sticky">
         <label for="numberInput">Enter a chapter number:</label>
         <input type="number" id="chapterNumberInput" value="1" min="0" max = "35">
-      </div>
+      </span>
 
       <h3>NOMINA</h3>
 
