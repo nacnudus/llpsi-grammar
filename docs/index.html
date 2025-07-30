@@ -8,8 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style type="text/css">
+
       * {
         font-family: Noto Serif;
+      }
+
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        color: light-dark(black, white);
+        opacity: 0.87;
+        background-color: light-dark(white, black);
       }
 
       th {
@@ -26,25 +37,25 @@
         position: sticky;
         top: 0;
         padding: 1rem 1rem;
-        background: white;
+        background: light-dark(white, black);
       }
 
       .unseen {
         padding: 0.13em 0.2em;
-        color: black;
-        background-color: white;
+        color: light-dark(black, white);
+        background-color: light-dark(white, black);
       }
 
       .current {
         padding: 0.13em 0.2em;
-        color: white;
-        background-color: black;
+        color: light-dark(white, black);
+        background-color: light-dark(black, white);
       }
 
       .previous {
         padding: 0.13em 0.2em;
-        color: black;
-        background-color: #D4D4D4;
+        color: light-dark(black, white);
+        background-color: light-dark(#D4D4D4, #6B6B6B);
       }
     </style>
   </head>
