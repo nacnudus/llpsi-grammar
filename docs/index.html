@@ -10,7 +10,6 @@
     <style type="text/css">
       * {
         font-family: Noto Serif;
-        <!-- line-height: 1; -->
       }
 
       th {
@@ -20,12 +19,26 @@
       .sticky {
         position: sticky;
         top: 0;
-        padding: 10px 16px;
+        padding: 1rem 1rem;
         background: white;
       }
 
+      .unseen {
+        padding: 0.13em 0.2em;
+        color: black;
+        background-color: white;
+      }
+
       .current {
-        background-color: yellow
+        padding: 0.13em 0.2em;
+        color: white;
+        background-color: black;
+      }
+
+      .previous {
+        padding: 0.13em 0.2em;
+        color: black;
+        background-color: #D4D4D4;
       }
     </style>
   </head>
@@ -1866,11 +1879,13 @@
                 highlightTargetChapterNumber = parseInt(regexMatches[1], 10);
                 switch (Math.sign(chapterNumberInputInt - highlightTargetChapterNumber)) {
                   case 1:
+                    highlightTarget.classList.remove('unseen');
                     highlightTarget.classList.remove('current');
                     highlightTarget.classList.add('previous');
                     break;
 
                   case 0:
+                    highlightTarget.classList.remove('unseen');
                     highlightTarget.classList.remove('previous');
                     highlightTarget.classList.add('current');
                     break;
@@ -1878,6 +1893,7 @@
                   case -1:
                     highlightTarget.classList.remove('previous');
                     highlightTarget.classList.remove('current');
+                    highlightTarget.classList.add('unseen');
                     break;
                 }
               }
