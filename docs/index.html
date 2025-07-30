@@ -1836,6 +1836,19 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+
+        function setChapterNumberFromUrlParameter(){
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          if (urlParams.has("capitulum")) {
+            const capitulum = urlParams.get("capitulum")
+            document.getElementById("chapterNumberInput").value = capitulum;
+          }
+        };
+
+        // Run once on page load
+        setChapterNumberFromUrlParameter();
+
         const chapterNumberInput = document.getElementById('chapterNumberInput');
         const highlightTargets = document.querySelectorAll('.entry');
         const regexExtractChapterNumber = /\bchapter(\d+)\b/
@@ -1866,6 +1879,9 @@
                 }
               }
             }
+
+            const newParams = new URLSearchParams({ capitulum: `${chapterNumberInputInt}` });
+            window.history.pushState({}, "", "?" + newParams.toString());
           }
         }
 
@@ -1873,7 +1889,9 @@
 
         // Run once on page load to set the initial state
         updateHighlight();
+
       });
     </script>
+
   </body>
 </html>
