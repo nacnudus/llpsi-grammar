@@ -21,6 +21,7 @@
         color: light-dark(black, white);
         opacity: 0.87;
         background-color: light-dark(white, black);
+        print-color-adjust:exact !important;
       }
 
       th {
@@ -57,6 +58,11 @@
         color: light-dark(black, white);
         background-color: light-dark(#D4D4D4, #6B6B6B);
       }
+
+      @media print {
+        .page-break { break-after: page; }
+      }
+
     </style>
   </head>
 
@@ -444,7 +450,7 @@
         </tbody>
       </table>
 
-      <p>&emsp;</p>
+      <p class="page-break">&emsp;</p>
 
       <table>
         <tbody>
@@ -832,6 +838,8 @@
 
         </tbody>
       </table>
+
+      <p class="page-break">&emsp;</p>
 
       <h3>NVMERI</h3>
 
@@ -1516,6 +1524,8 @@
 
         </tbody>
       </table>
+
+      <p class="page-break"/>
 
       <h3>VERBA</h3>
 
